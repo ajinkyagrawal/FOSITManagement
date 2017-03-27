@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#F2F2F2"
+    android:scrollbars="vertical"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:layout_height="fill_parent">
+
+
+    <ScrollView
+        android:id="@+id/ScrollView03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:paddingTop="15sp"
+            android:paddingBottom="15sp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                android:paddingTop="10sp">
+                <TextView
+                    android:id="@+id/tv25"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Reference Number"
+                    android:padding="4dp"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/tv26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignBaseline="@+id/tv25"
+                    android:layout_alignBottom="@+id/tv25"
+                    android:layout_toRightOf="@+id/ed10"
+                    android:text=":" />
+                <EditText
+                    android:id="@+id/edt10"
+                    android:inputType="textCapWords"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                android:paddingTop="10sp">
+                <TextView
+                    android:id="@+id/tv27"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Status"
+                    android:padding="4dp"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/tv28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignBaseline="@+id/tv27"
+                    android:layout_alignBottom="@+id/tv27"
+                    android:layout_toRightOf="@+id/edt11"
+                    android:text=":" />
+                <EditText
+                    android:id="@+id/edt11"
+                    android:inputType="numberDecimal"
+                    android:layout_width="fill_parent"
+                    android:ems="10"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                android:paddingTop="10sp">
+                <TextView
+                    android:id="@+id/tv29"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Assign To*"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="4dp"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/tv30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignBaseline="@+id/tv30"
+                    android:layout_alignBottom="@+id/tv30"
+                    android:layout_toRightOf="@+id/spn3"
+                    android:text=":" />
+                <Spinner
+                    android:id="@+id/spn3"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/btnLL2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:baselineAligned="false"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_background"
+            android:layout_marginRight="5dp"
+            android:text="CANCEL" />
+        <Button
+            android:id="@+id/assignButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textColor="#fff"
+            android:background="@drawable/button_background"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:text="ASSIGN"/>
+
+    </LinearLayout>
+</RelativeLayout>

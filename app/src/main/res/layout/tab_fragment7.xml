@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#F2F2F2"
+    android:scrollbars="vertical"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:layout_height="fill_parent">
+
+
+    <ScrollView
+        android:id="@+id/ScrollView05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnLL4">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:paddingTop="15sp"
+            android:paddingBottom="80sp" >
+            <TextView
+                android:text="TICKET DETAILS"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/tv39"
+                android:textColor="#515254"
+                android:textSize="17sp"
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                android:paddingTop="10sp">
+                <TextView
+                    android:id="@+id/tv40"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Reference Number"
+                    android:padding="4dp"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/tv41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignBaseline="@+id/tv40"
+                    android:layout_alignBottom="@+id/tv40"
+                    android:layout_toRightOf="@+id/ed40"
+                    android:text=":" />
+                <EditText
+                    android:id="@+id/edt12"
+                    android:inputType="textCapWords"
+                    android:layout_width="fill_parent"
+                    android:ems="10"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                android:paddingTop="10sp">
+                <TextView
+                    android:id="@+id/tv42"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Status"
+                    android:padding="4dp"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/tv43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignBaseline="@+id/tv42"
+                    android:layout_alignBottom="@+id/tv42"
+                    android:layout_toRightOf="@+id/spn1"
+                    android:text=":" />
+                <Spinner
+                    android:id="@+id/spn7"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                android:paddingTop="10sp">
+                <TextView
+                    android:id="@+id/tv44"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="First Name"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="4dp"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/tv45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignBaseline="@+id/tv44"
+                    android:layout_alignBottom="@+id/tv44"
+                    android:layout_toRightOf="@+id/ed13"
+                    android:text=":" />
+                <EditText
+                    android:id="@+id/edt13"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                android:paddingTop="10sp">
+                <TextView
+                    android:id="@+id/tv46"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="4dp"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/tv47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv46"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignBottom="@+id/tv46"
+                    android:layout_toRightOf="@+id/ed14"
+                    android:text=":" />
+                <EditText
+                    android:id="@+id/edt14"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                android:paddingTop="10sp">
+                <TextView
+                    android:id="@+id/tv48"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Category"
+                    android:padding="4dp"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/tv49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv48"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignBottom="@+id/tv4"
+                    android:layout_toRightOf="@+id/edt15"
+                    android:text=":" />
+                <EditText
+                    android:id="@+id/edt15"
+                    android:inputType="textCapWords"
+                    android:ems="10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                android:paddingTop="10sp">
+                <TextView
+                    android:id="@+id/tv50"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Priority"
+                    android:padding="4dp"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/tv51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv50"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignBottom="@+id/tv50"
+                    android:layout_toRightOf="@+id/ed16"
+                    android:text=":" />
+                <EditText
+                    android:id="@+id/edt16"
+                    android:inputType="text"
+                    android:ems="5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                android:paddingTop="10sp">
+                <TextView
+                    android:id="@+id/tv52"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="User ID"
+                    android:padding="4dp"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/tv53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignBaseline="@+id/tv52"
+                    android:layout_alignBottom="@+id/tv52"
+                    android:layout_toRightOf="@+id/ed17"
+                    android:text=":" />
+                <EditText
+                    android:id="@+id/edt17"
+                    android:inputType="textCapWords"
+                    android:ems="10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                android:paddingTop="10sp">
+                <TextView
+                    android:id="@+id/tv54"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Summary"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/tv55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv54"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignBottom="@+id/tv54"
+                    android:layout_toRightOf="@+id/ed18"
+                    android:text=":" />
+                <EditText
+                    android:id="@+id/edt18"
+                    android:layout_width="fill_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                android:paddingTop="10sp">
+                <TextView
+                    android:id="@+id/tv56"
+                    android:layout_width="180dp"
+                    android:padding="4dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/tv57"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv56"
+                    android:layout_alignBottom="@+id/tv56"
+                    android:layout_toRightOf="@+id/ed19"
+                    android:text=":" />
+                <EditText
+                    android:id="@+id/edt19"
+                    android:layout_width="fill_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/btnLL4"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="1dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/compltButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#fff"
+            android:background="@drawable/button_background2"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:text="COMPLETE"/>
+    </LinearLayout>
+</RelativeLayout>
